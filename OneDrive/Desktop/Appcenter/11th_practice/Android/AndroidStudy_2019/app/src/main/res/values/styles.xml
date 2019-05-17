@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--No Action Bar-->
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="EdittextStyle_login" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/greyish_brown</item>
+        <item name="android:textColorHint">@color/pinkish_grey</item>
+        <item name="android:colorControlNormal">@color/pale_grey</item>
+        <item name="android:colorControlActivated">@color/warm_grey</item>
+    </style>
+
+</resources>
