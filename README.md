@@ -23,7 +23,9 @@ Zeplin의 디자인 참고하여 로그인 Activity Layout 만들어오기
 ##  SecondWeek
 **Activity & Fragment**
 Activity와 Fragment 생명주기의 차이 비교
+
 [Android Developers - Activity Lifecycle](https://developer.android.com/guide/components/activities/activity-lifecycle?hl=ko)
+
 [Android Developers - Fragment](https://developer.android.com/guide/components/fragments?hl=ko)
 
 
