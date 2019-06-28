@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="67dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="107dp"
+        android:gravity="center"
+        android:text="로그인"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stdidtxt"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="이메일"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/logintxt"
+        app:layout_constraintTop_toBottomOf="@+id/logintxt" />
+
+    <EditText
+        android:id="@+id/idedittxt"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:hint="입력"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stdidtxt" />
+
+    <TextView
+        android:id="@+id/pwtxt"
+        android:layout_width="45dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="비밀번호"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/logintxt"
+        app:layout_constraintTop_toBottomOf="@+id/idedittxt" />
+
+    <EditText
+        android:id="@+id/pwedittxt"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:hint="입력"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idedittxt"
+        app:layout_constraintTop_toBottomOf="@+id/idedittxt" />
+
+
+    <ImageButton
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#00ff0000"
+        android:onClick="change_login2_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/group" />
+
+    <TextView
+        android:id="@+id/pwerrtxt"
+        android:layout_width="181dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:text=" *비밀번호 형식이 올바르지 않습니다"
+        android:textColor="#fb3a2f"
+        android:textSize="12sp"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwedittxt" />
+
+    <TextView
+        android:id="@+id/emailerrtxt"
+        android:layout_width="197dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="end"
+        android:text=" *이메일 형식이 올바르지 않습니다"
+        android:textColor="#fb3a2f"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idedittxt" />
+
+</android.support.constraint.ConstraintLayout>
